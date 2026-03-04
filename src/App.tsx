@@ -16,7 +16,7 @@ export default function App() {
 
       {/* Encabezado / Hero Section */}
       <header className="bg-gradient-to-b from-blue-50 to-white pt-20 pb-16 px-4 overflow-hidden">
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           <div className="lg:w-2/3 text-center lg:text-left">
             <span className="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-6 tracking-wide uppercase">
               Guía Exclusiva para Principiantes
@@ -50,7 +50,7 @@ export default function App() {
         </div>
       </header>
 
-      <main className="max-w-3xl mx-auto px-6 py-12 space-y-16">
+      <main className="max-w-5xl mx-auto px-6 py-12 space-y-20">
         
         {/* Sección de Empatía / El Problema */}
         <section className="prose prose-blue prose-lg max-w-none">
