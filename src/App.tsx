@@ -15,16 +15,16 @@ export default function App() {
       </div>
 
       {/* Encabezado / Hero Section */}
-      <header className="bg-gradient-to-b from-blue-50 to-white pt-20 pb-16 px-4 overflow-hidden">
-        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+      <header className="bg-gradient-to-b from-blue-50 to-white pt-12 pb-12 px-4 overflow-hidden">
+        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-2/3 text-center lg:text-left">
-            <span className="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-6 tracking-wide uppercase">
+            <span className="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold mb-4 tracking-wide uppercase">
               Guía Exclusiva para Principiantes
             </span>
-            <h1 className="text-4xl md:text-6xl font-extrabold text-blue-950 leading-tight mb-6">
+            <h1 className="text-3xl md:text-5xl font-extrabold text-blue-950 leading-tight mb-4">
               De Cero a tu Primera Campaña: La Guía Para Principiantes Que Te Enseña a Ganar Dinero con el Marketing de Afiliados <span className="text-blue-600">(Sin Necesidad de Invertir una Fortuna)</span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed mb-10 max-w-3xl mx-auto lg:mx-0">
+            <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-8 max-w-3xl mx-auto lg:mx-0">
               Descubre el Método Paso a Paso Para Crear tu Primera Campaña Rentable con Menos de $20 Usando una Técnica Sencilla que la Mayoría de los Principiantes Desconoce.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -43,7 +43,7 @@ export default function App() {
             <img 
               src="https://i.ibb.co/Df0qCYtW/cpa-marketing-smartlink.png" 
               alt="CPA Marketing Fórmula Smartlink Ebook" 
-              className="w-full max-w-[320px] lg:max-w-md drop-shadow-2xl rounded-xl transition-transform duration-300 hover:scale-105 cursor-pointer"
+              className="w-full max-w-[280px] lg:max-w-sm drop-shadow-2xl rounded-xl transition-transform duration-300 hover:scale-105 cursor-pointer"
               referrerPolicy="no-referrer"
             />
           </div>
