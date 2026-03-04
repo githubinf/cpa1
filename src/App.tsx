@@ -282,11 +282,9 @@ export default function App() {
             En mi libro, te enseño a identificar estas "ofertas de alta demanda" y a presentarlas de una manera que no parezca publicidad intrusiva, sino una recomendación útil o una oportunidad emocionante.
           </p>
 
-          <div className="not-prose my-12">
-            <p className="bg-[#1C398e] text-[#ffffff] p-8 rounded-2xl font-bold text-center shadow-2xl text-lg leading-relaxed">
-              Esta guía es diferente porque no se basa en la suerte. Se basa en un sistema.
-            </p>
-          </div>
+          <p className="bg-[#1C398e] !text-white p-8 rounded-2xl font-bold text-center shadow-xl">
+            Esta guía es diferente porque no se basa en la suerte. Se basa en un sistema.
+          </p>
           <p>
             Un sistema que yo mismo he probado, ajustado y perfeccionado para que funcione incluso con el presupuesto más limitado. No te voy a hablar de teorías complejas ni de estrategias avanzadas que requieren miles de dólares de inversión. Te voy a hablar de un método que puedes poner en práctica hoy mismo con menos de $20 en el bolsillo.
           </p>
@@ -515,9 +513,9 @@ export default function App() {
               </p>
               <a 
                 href="https://fcofrancis.pay.clickbank.net/?cbitems=8" 
-                className="block w-full py-5 bg-blue-600 hover:bg-blue-700 text-white text-xl md:text-2xl font-black rounded-2xl shadow-2xl shadow-blue-300 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3"
+                className="block w-full py-7 px-8 bg-blue-600 hover:bg-blue-700 text-white text-lg md:text-xl font-black rounded-2xl shadow-2xl shadow-blue-300 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-4 text-center"
               >
-                SÍ, QUIERO MI COPIA AHORA <ArrowRight className="w-6 h-6" />
+                SÍ, QUIERO MI COPIA AHORA <ArrowRight className="w-6 h-6 flex-shrink-0" />
               </a>
               <div className="flex items-center justify-center gap-6 pt-4 border-t border-slate-100">
                 <div className="flex flex-col items-center">
@@ -546,8 +544,9 @@ export default function App() {
         {/* Garantía */}
         <section className="bg-blue-50 p-8 md:p-12 rounded-3xl border-2 border-dashed border-blue-200 flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="flex-shrink-0">
-            <div className="w-28 h-28 bg-white rounded-full border-4 border-blue-600 flex items-center justify-center text-blue-600 font-black text-xl text-center leading-tight shadow-lg">
-              30 DÍAS<br/>GARANTÍA
+            <div className="w-36 h-36 bg-white rounded-full border-4 border-blue-600 flex flex-col items-center justify-center text-blue-600 font-black shadow-lg p-4">
+              <span className="text-2xl leading-none">30 DÍAS</span>
+              <span className="text-sm uppercase tracking-tighter">Garantía</span>
             </div>
           </div>
           <div className="space-y-4 text-center md:text-left">
