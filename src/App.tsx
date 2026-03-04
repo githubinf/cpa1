@@ -15,27 +15,37 @@ export default function App() {
       </div>
 
       {/* Encabezado / Hero Section */}
-      <header className="bg-gradient-to-b from-blue-50 to-white pt-20 pb-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-6 tracking-wide uppercase">
-            Guía Exclusiva para Principiantes
-          </span>
-          <h1 className="text-4xl md:text-6xl font-extrabold text-blue-950 leading-tight mb-6">
-            De Cero a tu Primera Campaña: La Guía Para Principiantes Que Te Enseña a Ganar Dinero con el Marketing de Afiliados <span className="text-blue-600">(Sin Necesidad de Invertir una Fortuna)</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed mb-10 max-w-3xl mx-auto">
-            Descubre el Método Paso a Paso Para Crear tu Primera Campaña Rentable con Menos de $20 Usando una Técnica Sencilla que la Mayoría de los Principiantes Desconoce.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a 
-              href="#comprar" 
-              className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold rounded-xl shadow-lg shadow-blue-200 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2"
-            >
-              SÍ, QUIERO MI COPIA POR $9,99 <ArrowRight className="w-5 h-5" />
-            </a>
-            <p className="text-sm text-slate-500 flex items-center gap-1">
-              <ShieldCheck className="w-4 h-4 text-green-500" /> Garantía de 30 días incluida
+      <header className="bg-gradient-to-b from-blue-50 to-white pt-20 pb-16 px-4 overflow-hidden">
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+          <div className="lg:w-2/3 text-center lg:text-left">
+            <span className="inline-block py-1 px-3 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-6 tracking-wide uppercase">
+              Guía Exclusiva para Principiantes
+            </span>
+            <h1 className="text-4xl md:text-6xl font-extrabold text-blue-950 leading-tight mb-6">
+              De Cero a tu Primera Campaña: La Guía Para Principiantes Que Te Enseña a Ganar Dinero con el Marketing de Afiliados <span className="text-blue-600">(Sin Necesidad de Invertir una Fortuna)</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed mb-10 max-w-3xl mx-auto lg:mx-0">
+              Descubre el Método Paso a Paso Para Crear tu Primera Campaña Rentable con Menos de $20 Usando una Técnica Sencilla que la Mayoría de los Principiantes Desconoce.
             </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <button 
+                onClick={() => document.getElementById('comprar')?.scrollIntoView({ behavior: 'smooth' })}
+                className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold rounded-xl shadow-lg shadow-blue-200 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2 cursor-pointer"
+              >
+                SÍ, QUIERO MI COPIA POR $9,99 <ArrowRight className="w-5 h-5" />
+              </button>
+              <p className="text-sm text-slate-500 flex items-center gap-1">
+                <ShieldCheck className="w-4 h-4 text-green-500" /> Garantía de 30 días incluida
+              </p>
+            </div>
+          </div>
+          <div className="lg:w-1/3 flex justify-center lg:justify-end">
+            <img 
+              src="https://i.ibb.co/Df0qCYtW/cpa-marketing-smartlink.png" 
+              alt="CPA Marketing Fórmula Smartlink Ebook" 
+              className="w-full max-w-[320px] lg:max-w-md drop-shadow-2xl rounded-xl transition-transform duration-300 hover:scale-105 cursor-pointer"
+              referrerPolicy="no-referrer"
+            />
           </div>
         </div>
       </header>
@@ -272,9 +282,11 @@ export default function App() {
             En mi libro, te enseño a identificar estas "ofertas de alta demanda" y a presentarlas de una manera que no parezca publicidad intrusiva, sino una recomendación útil o una oportunidad emocionante.
           </p>
 
-          <p className="bg-blue-600 text-white p-6 rounded-xl font-bold text-center shadow-lg">
-            Esta guía es diferente porque no se basa en la suerte. Se basa en un sistema.
-          </p>
+          <div className="not-prose my-12">
+            <p className="bg-[#1C398e] text-[#ffffff] p-8 rounded-2xl font-bold text-center shadow-2xl text-lg leading-relaxed">
+              Esta guía es diferente porque no se basa en la suerte. Se basa en un sistema.
+            </p>
+          </div>
           <p>
             Un sistema que yo mismo he probado, ajustado y perfeccionado para que funcione incluso con el presupuesto más limitado. No te voy a hablar de teorías complejas ni de estrategias avanzadas que requieren miles de dólares de inversión. Te voy a hablar de un método que puedes poner en práctica hoy mismo con menos de $20 en el bolsillo.
           </p>
@@ -488,33 +500,33 @@ export default function App() {
         </section>
 
         {/* Sección de Precio / Inversión */}
-        <section id="comprar" className="text-center space-y-8 py-12">
+        <section className="text-center space-y-8 py-12">
           <h2 className="text-4xl font-bold text-blue-950">Inversión: ¿Cuánto Cuesta Dejar de Aprender?</h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
             Imagina por un momento que pudieras ahorrarte los cientos o incluso miles de dólares que yo perdí al principio por no tener una guía clara. Imagina poder evitar meses de frustración y pruebas sin sentido.
           </p>
           
-          <div className="inline-block p-1 bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl shadow-2xl">
-            <div className="bg-white px-12 py-10 rounded-[1.4rem] space-y-6">
-              <p className="text-slate-500 font-bold uppercase tracking-widest text-sm">Precio de Lanzamiento Único</p>
-              <div className="text-7xl font-black text-blue-900">$9,99</div>
-              <p className="text-slate-500 max-w-xs mx-auto">
+          <div id="comprar" className="inline-block p-1 bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl shadow-2xl">
+            <div className="bg-white px-6 md:px-10 py-12 rounded-[1.4rem] space-y-6">
+              <p className="text-slate-500 font-bold uppercase tracking-widest text-xs">Precio de Lanzamiento Único</p>
+              <div className="text-6xl font-black text-blue-900">$9,99</div>
+              <p className="text-slate-500 text-sm max-w-xs mx-auto">
                 Menos de lo que cuesta una cena fuera de casa. Una inversión mínima para un conocimiento que puede cambiar tu futuro.
               </p>
               <a 
-                href="#" 
-                className="block w-full py-5 bg-blue-600 hover:bg-blue-700 text-white text-2xl font-bold rounded-2xl shadow-lg transition-all transform hover:scale-105"
+                href="https://fcofrancis.pay.clickbank.net/?cbitems=8" 
+                className="block w-full py-5 bg-blue-600 hover:bg-blue-700 text-white text-xl md:text-2xl font-black rounded-2xl shadow-2xl shadow-blue-300 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3"
               >
-                SÍ, QUIERO MI COPIA AHORA
+                SÍ, QUIERO MI COPIA AHORA <ArrowRight className="w-6 h-6" />
               </a>
-              <div className="flex items-center justify-center gap-4 pt-4 border-t border-slate-100">
+              <div className="flex items-center justify-center gap-6 pt-4 border-t border-slate-100">
                 <div className="flex flex-col items-center">
-                  <ShieldCheck className="w-8 h-8 text-blue-600" />
-                  <span className="text-[10px] font-bold text-slate-400 uppercase mt-1">Compra Segura</span>
+                  <ShieldCheck className="w-6 h-6 text-blue-600" />
+                  <span className="text-xs font-bold text-slate-400 uppercase mt-1">Compra Segura</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <Lock className="w-8 h-8 text-blue-600" />
-                  <span className="text-[10px] font-bold text-slate-400 uppercase mt-1">Datos Protegidos</span>
+                  <Lock className="w-6 h-6 text-blue-600" />
+                  <span className="text-xs font-bold text-slate-400 uppercase mt-1">Datos Protegidos</span>
                 </div>
               </div>
             </div>
@@ -532,20 +544,22 @@ export default function App() {
         </section>
 
         {/* Garantía */}
-        <section className="bg-blue-50 p-12 rounded-3xl border-2 border-dashed border-blue-200 flex flex-col md:flex-row items-center gap-10">
+        <section className="bg-blue-50 p-8 md:p-12 rounded-3xl border-2 border-dashed border-blue-200 flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="flex-shrink-0">
-            <div className="w-32 h-32 bg-white rounded-full border-8 border-blue-600 flex items-center justify-center text-blue-600 font-black text-2xl text-center leading-tight shadow-xl">
+            <div className="w-28 h-28 bg-white rounded-full border-4 border-blue-600 flex items-center justify-center text-blue-600 font-black text-xl text-center leading-tight shadow-lg">
               30 DÍAS<br/>GARANTÍA
             </div>
           </div>
-          <div className="space-y-4">
+          <div className="space-y-4 text-center md:text-left">
             <h3 className="text-2xl font-bold text-blue-900">Mi Compromiso Contigo: 30 Días de Garantía Total</h3>
-            <p className="text-slate-600 leading-relaxed">
-              Quiero que te sientas completamente seguro con tu decisión. Por eso, te ofrezco una garantía de devolución de 30 días. Tienes un mes completo para leer el libro, estudiar sus capítulos y poner en práctica sus enseñanzas.
-            </p>
-            <p className="text-slate-600 leading-relaxed">
-              Si en ese tiempo consideras que no es lo que esperabas, que no te aporta valor o simplemente no estás satisfecho por cualquier motivo, me lo dices y te devolveré el importe íntegro de tu compra, sin hacer preguntas. El riesgo es cero para ti.
-            </p>
+            <div className="text-slate-600 leading-relaxed space-y-4">
+              <p>
+                Quiero que te sientas completamente seguro con tu decisión. Por eso, te ofrezco una garantía de devolución de 30 días. Tienes un mes completo para leer el libro, estudiar sus capítulos y poner en práctica sus enseñanzas.
+              </p>
+              <p>
+                Si en ese tiempo consideras que no es lo que esperabas, que no te aporta valor o simplemente no estás satisfecho por cualquier motivo, me lo dices y te devolveré el importe íntegro de tu compra, sin hacer preguntas. El riesgo es cero para ti.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -626,12 +640,12 @@ export default function App() {
             O puedes decidir que hoy es el día en que tomas el control. Por menos de lo que cuesta un café y un bocadillo, tienes acceso a un mapa que me costó años y miles de dólares construir. No tienes nada que perder gracias a mi garantía de 30 días.
           </p>
           <div className="flex flex-col items-center gap-6">
-            <a 
-              href="#comprar" 
-              className="px-12 py-6 bg-blue-600 hover:bg-blue-700 text-white text-3xl font-black rounded-2xl shadow-2xl shadow-blue-300 transition-all transform hover:-translate-y-2"
+            <button 
+              onClick={() => document.getElementById('comprar')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-12 py-6 bg-blue-600 hover:bg-blue-700 text-white text-3xl font-black rounded-2xl shadow-2xl shadow-blue-300 transition-all transform hover:-translate-y-2 cursor-pointer"
             >
               SÍ, QUIERO EMPEZAR HOY MISMO
-            </a>
+            </button>
             <p className="text-slate-400 font-medium flex items-center gap-2">
               <Lock className="w-4 h-4" /> Acceso inmediato tras el pago seguro
             </p>
@@ -651,12 +665,12 @@ export default function App() {
             Tu viaje hacia el marketing de afiliados sin riesgos empieza aquí.
           </p>
           <div className="mt-12">
-            <a 
-              href="#comprar" 
-              className="inline-flex items-center gap-3 px-10 py-5 bg-blue-600 hover:bg-blue-700 text-white text-2xl font-extrabold rounded-2xl shadow-xl transition-all"
+            <button 
+              onClick={() => document.getElementById('comprar')?.scrollIntoView({ behavior: 'smooth' })}
+              className="inline-flex items-center gap-3 px-10 py-5 bg-blue-600 hover:bg-blue-700 text-white text-2xl font-extrabold rounded-2xl shadow-xl transition-all cursor-pointer"
             >
               CONSEGUIR MI COPIA AHORA <ArrowRight className="w-6 h-6" />
-            </a>
+            </button>
           </div>
           <div className="mt-16 pt-10 border-t border-slate-100 space-y-4">
             <p className="text-slate-500 italic">
@@ -673,24 +687,19 @@ export default function App() {
 
       {/* Footer */}
       <footer className="bg-slate-50 py-12 px-6 border-t border-slate-200">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-slate-400 text-sm">
+        <div className="max-w-4xl mx-auto text-center text-slate-400 text-sm">
           <p>© 2026 CPA Marketing Fórmula Smartlink. Todos los derechos reservados.</p>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-blue-600 transition-colors">Términos y Condiciones</a>
-            <a href="#" className="hover:text-blue-600 transition-colors">Política de Privacidad</a>
-            <a href="#" className="hover:text-blue-600 transition-colors">Contacto</a>
-          </div>
         </div>
       </footer>
 
       {/* Botón flotante de compra (móvil) */}
       <div className="md:hidden fixed bottom-6 left-6 right-6 z-40">
-        <a 
-          href="#comprar" 
-          className="flex items-center justify-center w-full py-4 bg-blue-600 text-white font-bold rounded-xl shadow-2xl shadow-blue-400"
+        <button 
+          onClick={() => document.getElementById('comprar')?.scrollIntoView({ behavior: 'smooth' })}
+          className="flex items-center justify-center w-full py-4 bg-blue-600 text-white font-bold rounded-xl shadow-2xl shadow-blue-400 cursor-pointer"
         >
           COMPRAR POR $9,99
-        </a>
+        </button>
       </div>
     </div>
   );
