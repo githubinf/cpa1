@@ -32,10 +32,10 @@ export default function App() {
                 onClick={() => document.getElementById('comprar')?.scrollIntoView({ behavior: 'smooth' })}
                 className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold rounded-xl shadow-lg shadow-blue-200 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2 cursor-pointer"
               >
-                SÍ, QUIERO MI COPIA POR $9,99 <ArrowRight className="w-5 h-5" />
+                SÍ, QUIERO MI COPIA POR $9,99 <ArrowRight className="w-5 h-5" aria-hidden="true" />
               </button>
               <p className="text-sm text-slate-500 flex items-center gap-1">
-                <ShieldCheck className="w-4 h-4 text-green-500" /> Garantía de 30 días incluida
+                <ShieldCheck className="w-4 h-4 text-green-500" aria-hidden="true" /> Garantía de 30 días incluida
               </p>
             </div>
           </div>
@@ -45,6 +45,8 @@ export default function App() {
               alt="CPA Marketing Fórmula Smartlink Ebook" 
               className="w-full max-w-[280px] lg:max-w-sm drop-shadow-2xl rounded-xl transition-transform duration-300 hover:scale-105 cursor-pointer"
               referrerPolicy="no-referrer"
+              decoding="async"
+              fetchpriority="high"
             />
           </div>
         </div>
@@ -70,25 +72,25 @@ export default function App() {
             <h3 className="text-xl font-bold text-blue-900 mt-0 mb-4">Ese muro está hecho de:</h3>
             <ul className="space-y-4 list-none pl-0">
               <li className="flex gap-3">
-                <div className="mt-1 text-blue-600"><Zap className="w-5 h-5" /></div>
+                <div className="mt-1 text-blue-600"><Zap className="w-5 h-5" aria-hidden="true" /></div>
                 <div>
                   <strong>Demasiada información:</strong> "Tienes que elegir un nicho", "no, mejor una subred de coste por acción", "tienes que crear una página de destino", "necesitas un embudo de ventas", "el tráfico es lo más importante", "olvídate del tráfico, lo importante es la oferta"... Un laberinto de conceptos que te deja más confundido que al principio.
                 </div>
               </li>
               <li className="flex gap-3">
-                <div className="mt-1 text-blue-600"><Zap className="w-5 h-5" /></div>
+                <div className="mt-1 text-blue-600"><Zap className="w-5 h-5" aria-hidden="true" /></div>
                 <div>
                   <strong>Miedo a perder dinero:</strong> Lees que necesitas invertir en publicidad, pero los supuestos expertos te hablan de gastar $500, $1.000 o incluso $5.000 para ver resultados. No tienes ese dinero, y desde luego no estás dispuesto a arriesgarlo en algo que no entiendes del todo.
                 </div>
               </li>
               <li className="flex gap-3">
-                <div className="mt-1 text-blue-600"><Zap className="w-5 h-5" /></div>
+                <div className="mt-1 text-blue-600"><Zap className="w-5 h-5" aria-hidden="true" /></div>
                 <div>
                   <strong>Frustración constante:</strong> Decides probar por tu cuenta. Te registras en una red, eliges una oferta al azar, creas un anuncio en una red social y... nada. Ni un solo clic. O peor aún, consigues unos pocos clics, pero cero conversiones. El dinero que has invertido se ha esfumado sin dejarte nada a cambio. Y no sabes qué hiciste mal.
                 </div>
               </li>
               <li className="flex gap-3">
-                <div className="mt-1 text-blue-600"><Zap className="w-5 h-5" /></div>
+                <div className="mt-1 text-blue-600"><Zap className="w-5 h-5" aria-hidden="true" /></div>
                 <div>
                   <strong>El miedo a lo desconocido:</strong> Términos técnicos que parecen palabras en otro idioma. Un idioma que solo hablan los "expertos" y que te hace sentir que esto no es para ti, que quizás llegaste tarde o que no tienes las habilidades necesarias.
                 </div>
@@ -515,15 +517,15 @@ export default function App() {
                 href="https://fcofrancis.pay.clickbank.net/?cbitems=8" 
                 className="block w-full py-7 px-8 bg-blue-600 hover:bg-blue-700 text-white text-lg md:text-xl font-black rounded-2xl shadow-2xl shadow-blue-300 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-4 text-center"
               >
-                SÍ, QUIERO MI COPIA AHORA <ArrowRight className="w-6 h-6 flex-shrink-0" />
+                SÍ, QUIERO MI COPIA AHORA <ArrowRight className="w-6 h-6 flex-shrink-0" aria-hidden="true" />
               </a>
               <div className="flex items-center justify-center gap-6 pt-4 border-t border-slate-100">
                 <div className="flex flex-col items-center">
-                  <ShieldCheck className="w-6 h-6 text-blue-600" />
+                  <ShieldCheck className="w-6 h-6 text-blue-600" aria-hidden="true" />
                   <span className="text-xs font-bold text-slate-400 uppercase mt-1">Compra Segura</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <Lock className="w-6 h-6 text-blue-600" />
+                  <Lock className="w-6 h-6 text-blue-600" aria-hidden="true" />
                   <span className="text-xs font-bold text-slate-400 uppercase mt-1">Datos Protegidos</span>
                 </div>
               </div>
