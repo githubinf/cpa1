@@ -43,6 +43,8 @@ export default function App() {
             <img 
               src="https://i.ibb.co/Df0qCYtW/cpa-marketing-smartlink.png" 
               alt="CPA Marketing Fórmula Smartlink Ebook" 
+              width="384"
+              height="512"
               className="w-full max-w-[280px] lg:max-w-sm drop-shadow-2xl rounded-xl transition-transform duration-300 hover:scale-105 cursor-pointer"
               referrerPolicy="no-referrer"
               decoding="async"
@@ -515,6 +517,8 @@ export default function App() {
               </p>
               <a 
                 href="https://fcofrancis.pay.clickbank.net/?cbitems=8" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full py-7 px-8 bg-blue-600 hover:bg-blue-700 text-white text-lg md:text-xl font-black rounded-2xl shadow-2xl shadow-blue-300 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-4 text-center"
               >
                 SÍ, QUIERO MI COPIA AHORA <ArrowRight className="w-6 h-6 flex-shrink-0" aria-hidden="true" />
